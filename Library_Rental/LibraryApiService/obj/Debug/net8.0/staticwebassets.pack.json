@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\CreateUserPage.html",
+      "PackagePath": "staticwebassets\\CreateUserPage.html"
+    },
+    {
+      "Id": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\FrontPage.html",
+      "PackagePath": "staticwebassets\\FrontPage.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LibraryApiService.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LibraryApiService.props",
+      "PackagePath": "build\\LibraryApiService.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LibraryApiService.props",
+      "PackagePath": "buildMultiTargeting\\LibraryApiService.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LibraryApiService.props",
+      "PackagePath": "buildTransitive\\LibraryApiService.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "wcV+aQD4W3n2/Mr8/7bpf7azhTnuhE5rgL1l8bcwS6I=",
+  "Source": "LibraryApiService",
+  "BasePath": "_content/LibraryApiService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LibraryApiService\\wwwroot",
+      "Source": "LibraryApiService",
+      "ContentRoot": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\",
+      "BasePath": "_content/LibraryApiService",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\CreateUserPage.html",
+      "SourceId": "LibraryApiService",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\",
+      "BasePath": "_content/LibraryApiService",
+      "RelativePath": "CreateUserPage.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CreateUserPage.html"
+    },
+    {
+      "Identity": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\FrontPage.html",
+      "SourceId": "LibraryApiService",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\",
+      "BasePath": "_content/LibraryApiService",
+      "RelativePath": "FrontPage.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\FrontPage.html"
+    }
+  ]
+}
