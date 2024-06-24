@@ -8,7 +8,7 @@ namespace LibraryApiService
     {
         public IEnumerable<Library> GetBooks()
         {
-            string connstring = "server=localhost;uid=root;pwd=993388;database=databse";
+            string connstring = "server=localhost;uid=root;pwd=;database=databse";
             try
             {
                 using(MySqlConnection conn = new MySqlConnection(connstring))

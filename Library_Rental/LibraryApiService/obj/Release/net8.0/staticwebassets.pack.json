@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\CreateUserPage.html",
+      "PackagePath": "staticwebassets\\CreateUserPage.html"
+    },
+    {
+      "Id": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\FrontPage.html",
+      "PackagePath": "staticwebassets\\FrontPage.html"
+    },
+    {
+      "Id": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\Library.html",
+      "PackagePath": "staticwebassets\\Library.html"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.LibraryApiService.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.LibraryApiService.props",
+      "PackagePath": "build\\LibraryApiService.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LibraryApiService.props",
+      "PackagePath": "buildMultiTargeting\\LibraryApiService.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.LibraryApiService.props",
+      "PackagePath": "buildTransitive\\LibraryApiService.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

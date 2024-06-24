@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryApiService.Controllers
 {
@@ -32,12 +33,18 @@ namespace LibraryApiService.Controllers
 
             if (user != null && PasswordHasher.checkPassword(loginDetails.password, user.password))
             {
-                return Ok(new { success = true, user = user });
+                return Ok(new { success = true, user });
             }
             else
             {
                 return Unauthorized(new { success = false, message = "Invalid username or password." });
             }
+        }
+        [HttpGet]
+        public ActionResult<IEnumerable<Users>> GetUsers()
+        {
+            var users = _userRepository.GetUsers();
+            return Ok(users);
         }
     }
 }

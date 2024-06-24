@@ -1,12 +1,16 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\CreateUserPage.html",
+      "Id": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\CreateUserPage.html",
       "PackagePath": "staticwebassets\\CreateUserPage.html"
     },
     {
-      "Id": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\FrontPage.html",
+      "Id": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\FrontPage.html",
       "PackagePath": "staticwebassets\\FrontPage.html"
+    },
+    {
+      "Id": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\Library.html",
+      "PackagePath": "staticwebassets\\Library.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LibraryApiService.Microsoft.AspNetCore.StaticWebAssets.props",

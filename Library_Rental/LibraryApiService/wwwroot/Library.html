@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rental Library</title>
+</head>
+<body>
+    <div class="list_of_books">
+        <ul id="bookList"></ul>
+    </div>
+    <div id="userbookList" class="bookUserListContainer">
+
+    </div>
+    <div id="" class=""
+    <input type="submit" value="Rent Book" id="rentButton">
+    <script>
+        let user_id;
+        document.addEventListener('DOMContentLoaded', function () {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            user_id = urlParams.get('userId');
+            console.log(user_id);
+            rentButton.addEventListener('click', rentBook);
+        });
+        async function fetchUserBooks() {
+            try {
+                const response = await fetch('api/Checkout'){
+                    method = 'GET',
+                    body = user_id,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }
+                const books = await response.json();
+                const bookUserListContainer = document.getElementById('userbookList');
+                books.forEach(book => {
+                    const li = document.createElement('li')
+                    li.textContent = `${book.book_name}`;
+                    bookUserListContainer.appendChild(li);
+                })
+
+            }
+        }
+        async function fetchBooks() {
+            try {
+                const response = await fetch('api/Library');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch books');
+                }
+                const books = await response.json();
+                const bookListContainer = document.getElementById('bookList');
+                books.forEach(book => {
+                    const li = document.createElement('li');
+                    li.textContent = `${book.book_name} by ${book.book_author}`;
+                    li.style.cursor = 'pointer';
+                    li.addEventListener('click', () => {
+                        bookClicked(book);
+                    });
+                    bookListContainer.appendChild(li);
+                });
+            } catch (error) {
+                console.error('Error fetching books:', error);
+            }
+        }
+        function bookClicked(book) {
+            console.log(book)
+            const descriptionContainer = document.getElementById('bookDescriptionContainer');
+            descriptionContainer.innerHTML = `<p>${book.book_description}</p>`;
+            descriptionContainer.setAttribute('book_id', book.book_id);
+        }
+        async function rentBook() {
+            const descriptionContainer = document.getElementById('bookDescriptionContainer');
+            const book_id = descriptionContainer.getAttribute('book_id');
+            try {
+                const response = await fetch('api/Checkout', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ checkout_user_id: user_id, checkout_book_id: book_id })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to rent book');
+                }
+
+                alert('Book rented successfully!');
+                descriptionContainer.innerHTML = '';
+                descriptionContainer.removeAttribute('data-book-id');
+            } catch (error) {
+                console.error('Error renting book:', error);
+                alert('Failed to rent book. Please try again.');
+            }
+        }
+        fetchBooks();
+    </script>
+</body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    input[type="submit"] {
+        width: 100px;
+        padding: 10px;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 5px 34.5%;   
+    }
+    .book-description-container {
+        max-width: 480px;
+        margin: 20px 34.5%;
+        background-color: lightskyblue;
+        border: 3px solid;
+    }
+    .list_of_books {
+        max-width: 480px;
+        margin: 20px 34.5%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        overflow-y: auto;
+        max-height: 360px;
+    }
+
+        .list_of_books ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .list_of_books ul li {
+                cursor: pointer;
+                padding: 10px;
+                border-bottom: 3px solid #eee;
+            }
+
+                .list_of_books ul li:hover {
+                    background-color: #f0f0f0;
+                }
+</style>
+</html>

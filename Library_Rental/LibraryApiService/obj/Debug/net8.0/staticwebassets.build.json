@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wcV+aQD4W3n2/Mr8/7bpf7azhTnuhE5rgL1l8bcwS6I=",
+  "Hash": "/+4ppXIPecKov9ml7xqQTEgNgGeQDDd6TYVxIS6yVxY=",
   "Source": "LibraryApiService",
   "BasePath": "_content/LibraryApiService",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "LibraryApiService\\wwwroot",
       "Source": "LibraryApiService",
-      "ContentRoot": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\CreateUserPage.html",
+      "Identity": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\CreateUserPage.html",
       "SourceId": "LibraryApiService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "RelativePath": "CreateUserPage.html",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\CreateUserPage.html"
     },
     {
-      "Identity": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\FrontPage.html",
+      "Identity": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\FrontPage.html",
       "SourceId": "LibraryApiService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vbosh\\source\\repos\\LibraryApiService\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "RelativePath": "FrontPage.html",
       "AssetKind": "All",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\FrontPage.html"
+    },
+    {
+      "Identity": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\Library.html",
+      "SourceId": "LibraryApiService",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "BasePath": "_content/LibraryApiService",
+      "RelativePath": "Library.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Library.html"
     }
   ]
 }

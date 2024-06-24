@@ -4,7 +4,7 @@ namespace LibraryApiService
 {
     public class UserRepository : IUserRepository
     {
-        private string connstring = "server=localhost;uid=root;pwd=993388;database=databse";
+        private string connstring = "server=localhost;uid=root;pwd=;database=databse";
         public void AddUser(Users user)
         {
             try
