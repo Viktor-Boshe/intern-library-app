@@ -39,7 +39,7 @@ namespace LibraryApiService.Controllers
                 throw new Exception(ex.Message);
             }
         }
-        [HttpGet]
+        [HttpGet("getbooks")]
         public ActionResult Get(int id)
         {
             try

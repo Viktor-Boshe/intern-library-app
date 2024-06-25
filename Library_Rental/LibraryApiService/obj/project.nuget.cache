@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vG+wRTHvH1Q=",
+  "dgSpecHash": "Va3D8fKeLgU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vbosh\\OneDrive\\Desktop\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\LibraryApiService.csproj",
+  "projectFilePath": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\LibraryApiService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vbosh\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\vbosh\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",

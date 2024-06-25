@@ -63,8 +63,12 @@ namespace LibraryApiService
                     conn.Open();
                     foreach (int book_id in bookIds)
                     {
-                        string query = "SELECT book_name FROM Library where book_id = @book_id";
-                        books = conn.Query<Library>(query).ToList();
+                        string query = "SELECT * FROM Library where book_id = @book_id";
+                        var book = conn.QueryFirstOrDefault<Library>(query, new { book_id });
+                        if(book != null)
+                        {
+                            books.Add(book);
+                        }
                     }
                     return books;
                 }
