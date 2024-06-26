@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\wwwroot\\scripts\\createuserscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\wwwroot\\scripts\\createuserscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\wwwroot\\styling\\loginpagestyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\wwwroot\\styling\\loginpagestyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\wwwroot\\createuserpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\wwwroot\\createuserpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\wwwroot\\styling\\loginpagestyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\wwwroot\\styling\\loginpagestyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\wwwroot\\scripts\\createuserscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\wwwroot\\scripts\\createuserscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\wwwroot\\frontpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,13 +70,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "createuserscript.js",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\createuserscript.js",
               "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\scripts\\createuserscript.js",
               "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\createuserscript.js",
               "RelativeToolTip": "LibraryApiService\\wwwroot\\scripts\\createuserscript.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-06-26T08:51:20.702Z",
               "EditorCaption": ""
@@ -96,13 +96,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "loginpagestyle.css",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\loginpagestyle.css",
               "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\styling\\loginpagestyle.css",
               "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\loginpagestyle.css",
               "RelativeToolTip": "LibraryApiService\\wwwroot\\styling\\loginpagestyle.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-06-26T08:35:07.063Z",
               "EditorCaption": ""
@@ -117,8 +117,7 @@
               "RelativeToolTip": "LibraryApiService\\wwwroot\\styling\\librarystyle.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-26T07:24:49.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T07:24:49.114Z"
             },
             {
               "$type": "Document",
@@ -130,8 +129,7 @@
               "RelativeToolTip": "LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
               "ViewState": "AQIAAE8AAACQzMzMzOw5wGIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-26T07:19:31.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T07:19:31.826Z"
             },
             {
               "$type": "Document",
@@ -143,8 +141,7 @@
               "RelativeToolTip": "LibraryApiService\\wwwroot\\FrontPage.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-06-25T08:49:41.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T08:49:41.207Z"
             },
             {
               "$type": "Document",
@@ -156,8 +153,7 @@
               "RelativeToolTip": "LibraryApiService\\wwwroot\\scripts\\loginpagescript.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-26T08:35:24.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T08:35:24.191Z"
             },
             {
               "$type": "Document",
@@ -169,8 +165,7 @@
               "RelativeToolTip": "LibraryApiService\\wwwroot\\styling\\createuserstyling.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-26T08:51:36.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T08:51:36.708Z"
             },
             {
               "$type": "Document",
@@ -182,8 +177,7 @@
               "RelativeToolTip": "LibraryApiService\\wwwroot\\Library.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-06-25T08:21:13.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T08:21:13.18Z"
             },
             {
               "$type": "Document",
@@ -195,8 +189,7 @@
               "RelativeToolTip": "LibraryApiService\\CheckoutRepository.cs",
               "ViewState": "AQIAACsAAACAXGZmZmYRwEEAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T08:08:40.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T08:08:40.838Z"
             },
             {
               "$type": "Document",
@@ -208,8 +201,7 @@
               "RelativeToolTip": "LibraryApiService\\Controllers\\CheckoutController.cs",
               "ViewState": "AQIAACYAAACgAAAAAAAgwBkAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T14:19:14.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T14:19:14.649Z"
             }
           ]
         }
