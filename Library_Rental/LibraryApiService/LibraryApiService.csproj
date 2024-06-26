@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\scripts\libraryscript.js" />
+    <None Include="wwwroot\styling\librarystyle.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.35" />
     <PackageReference Include="MySql.Data" Version="8.4.0" />
     <PackageReference Include="MySqlConnector" Version="2.3.7" />

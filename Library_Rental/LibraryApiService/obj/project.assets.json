@@ -1959,11 +1959,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\LibraryApiService.csproj",
+      "projectUniqueName": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\LibraryApiService.csproj",
       "projectName": "LibraryApiService",
-      "projectPath": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\LibraryApiService.csproj",
+      "projectPath": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\LibraryApiService.csproj",
       "packagesPath": "C:\\Users\\vbosh\\.nuget\\packages\\",
-      "outputPath": "D:\\repos\\Library_Rental\\intern-library-app-feature-library-app-different-direction\\Library_Rental\\LibraryApiService\\obj\\",
+      "outputPath": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
