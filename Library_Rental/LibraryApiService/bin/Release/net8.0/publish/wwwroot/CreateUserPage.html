@@ -2,91 +2,21 @@
 <html>
 <head>
     <title>Create User Page</title>
+    <link rel="stylesheet" href="styling/createuserstyling.css"
 </head>
 <body>
     <div class="createuser-container">
         <h2>Create User</h2>
         <form id="CreateUserForm">
             <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username" required><br>
+            <input type="text" id="username" name="username"><br>
             <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br>
-            <input type="submit" value="Create">
+            <input type="password" id="password" name="password"><br>
+            <input id="createUser" type="submit" value="Create" />
+            <input id="logIn" type="submit" value="Log in existing user" />
         </form>
         <p id="errorMessage" style="color: red; display: none;">Username already in use.</p>
     </div>
-    <script>
-        document.getElementById('CreateUserForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            fetch('/api/users/create', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ username: username, password: password })
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        window.location.href = 'FrontPage.html';
-                    } else {
-                        document.getElementById('errorMessage').style.display = 'block';
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-        });
-    </script>
+    <script src="scripts/createuserscript.js"></script>
 </body>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .createuser-container {
-        background-color: white;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        width: 480px;
-    }
-
-        .createuser-container h2 {
-            margin-bottom: 20px;
-        }
-
-        .createuser-container input[type="text"],
-        .createuser-container input[type="password"] {
-            width: 75%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .createuser-container input[type="submit"] {
-            width: 30%;
-            padding: 10px;
-            margin-bottom: 10px;
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-            .createuser-container input[type="submit"]:hover {
-                background-color: #45a049;
-            }
-</style>
 </html>

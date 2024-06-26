@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LibraryApiService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18bdd94b72d0582bc019a0fc39a54e14723af40f")]
 [assembly: System.Reflection.AssemblyProductAttribute("LibraryApiService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LibraryApiService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
