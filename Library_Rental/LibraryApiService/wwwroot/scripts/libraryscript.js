@@ -45,6 +45,7 @@
             }
             const books = await response.json();
             const bookListContainer = document.getElementById('bookList');
+            bookListContainer.innerHTML = '';
             books.forEach(book => {
                 const li = createAvailableBookList(book);
                 bookListContainer.appendChild(li);
@@ -61,7 +62,7 @@
         li.addEventListener('click', () => {
             deselectPreviousSelections("bookList");
             li.classList.add('highlighted')
-            bookClicked(book);
+            bookClicked(book,"bookList");
             });
         return li;
     }
@@ -72,7 +73,7 @@
         li.addEventListener('click', () => {
             deselectPreviousSelections("userBookList");
             li.classList.add('highlighted')
-            userBookClicked(book);
+            bookClicked(book, "userBookList")
         });
         return li;
     }
@@ -95,6 +96,7 @@
             }
 
             alert('Book rented successfully!');
+            fetchBooks();
             fetchUserBooks();
         } catch (error) {
             console.error('Error renting book:', error);
@@ -103,8 +105,8 @@
     }
 
     async function returnBook() {
-        const userBookContainer = document.getElementById("userBookList");
-        const book_id = userBookContainer.getAttribute('book_id');
+        const bookContainer = document.getElementById("userBookList");
+        const book_id = bookContainer.getAttribute('book_id');
         if (!book_id) return;
 
         try {
@@ -119,19 +121,16 @@
                 throw new Error('Failed to return book');
             }
             alert('Book returned successfully!');
+            fetchBooks();
             fetchUserBooks();
         } catch (error) {
             console.error('Error returning book:', error);
             alert('Failed to return book. Please try again.');
         }
     }
-    function bookClicked(book){
-        const bookContainer = document.getElementById('bookList');
+    function bookClicked(book,str){
+        const bookContainer = document.getElementById(str);
         const book_id = bookContainer.setAttribute('book_id',book.book_id);
-    }
-    function userBookClicked(book) {
-        const userBookContainer = document.getElementById("userBookList");
-        const book_id = userBookContainer.setAttribute('book_id', book.book_id);
     }
     function deselectPreviousSelections(list) {
         const bookContainer = document.getElementById(list);

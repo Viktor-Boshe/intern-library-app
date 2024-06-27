@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Log in Page</title>
-    <link rel="stylesheet" href="styling/loginpagestyle.css"/>
 </head>
 <body>
     <div class="login-container">
@@ -19,6 +18,84 @@
         </form>
         <p id="errorMessage" style="color: red; display: none;">Invalid username or password.</p>
     </div>
-    <script src="scripts/loginpagescript.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            fetch('/api/users/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username: username, password: password })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const user_id = data.user.user_id;
+                    if (data.success) {
+                        window.location.href = `Library.html?userId=${user_id}`;
+                    } else {
+                        document.getElementById('errorMessage').style.display = 'block';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        });
+
+        document.getElementById('CreateUserForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            window.location.href = 'CreateUserPage.html';
+        });
+    </script>
 </body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .login-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 480px;
+    }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-container input[type="submit"] {
+            width: 30%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+            .login-container input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+</style>
 </html>
