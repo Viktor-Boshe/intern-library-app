@@ -26,11 +26,16 @@ namespace LibraryApiService.Controllers
                 throw new Exception(ex.Message);
             }
         }
-        [HttpDelete]
-        public ActionResult Delete(Checkout checkout)
+        [HttpDelete("removeBook")]
+        public ActionResult Delete(int user_id,int book_id)
         {
             try
             {
+                var checkout = new Checkout
+                {
+                    checkout_user_id = user_id,
+                    checkout_book_id = book_id
+                };
                 _checkoutRepository.DeleteCheckout(checkout);
                 return Ok(new { success = true });
             }

@@ -110,12 +110,11 @@
         if (!book_id) return;
 
         try {
-            const response = await fetch('api/checkout', {
+            const response = await fetch(`api/checkout/removeBook?user_id=${user_id}&book_id=${book_id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ checkout_user_id: user_id, checkout_book_id: book_id })
             });
             if (!response.ok) {
                 throw new Error('Failed to return book');
