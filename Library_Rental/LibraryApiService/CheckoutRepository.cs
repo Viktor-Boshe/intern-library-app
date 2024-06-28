@@ -17,14 +17,23 @@ namespace LibraryApiService
                     conn.Open();
                     DateTime rented_time = DateTime.Now;
                     DateTime return_date = rented_time.AddMonths(3);
-                    string query = "INSERT INTO checkout (checkout_user_id,checkout_book_id,rented_time,return_date) VALUES (@user_id,@book_id,@rented_time,@return_date)";
-                    conn.Execute(query, new { user_id = checkout.checkout_user_id, book_id = checkout.checkout_book_id, rented_time, return_date });
+                    string insertQuery = "INSERT INTO checkout (checkout_user_id,checkout_book_id,rented_time,return_date) VALUES (@user_id,@book_id,@rented_time,@return_date)";
+                    conn.Execute(insertQuery, new { user_id = checkout.checkout_user_id, book_id = checkout.checkout_book_id, rented_time, return_date });
+                    string updateQuery = "UPDATE library SET book_availability = book_availability - 1 WHERE book_id = @book_id";
+                    conn.Execute(updateQuery, new { book_id = checkout.checkout_book_id });
                     conn.Close();
                 }
             }
             catch (Exception ex) 
             {
-                throw new Exception(ex.Message);
+                if (ex.Message.Contains("duplicate"))
+                {
+                    throw new Exception("you have already rented this book");
+                }
+                else
+                {
+                    throw new Exception("the book is not available for rent");
+                }
             }
         }
 
@@ -35,8 +44,10 @@ namespace LibraryApiService
                 using (var conn = new MySqlConnection(connstring))
                 {
                     conn.Open();
-                    string query = "DELETE FROM checkout WHERE checkout_user_id = @user_id AND checkout_book_id = @book_id";
-                    conn.Execute(query, new { user_id = checkout.checkout_user_id, book_id = checkout.checkout_book_id });
+                    string deleteQuery = "DELETE FROM checkout WHERE checkout_user_id = @user_id AND checkout_book_id = @book_id";
+                    conn.Execute(deleteQuery, new { user_id = checkout.checkout_user_id, book_id = checkout.checkout_book_id });
+                    string updateQuery = "UPDATE library SET book_availability = book_availability + 1 WHERE book_id = @book_id";
+                    conn.Execute(updateQuery, new { book_id = checkout.checkout_book_id });
                     conn.Close();
                 }
             }

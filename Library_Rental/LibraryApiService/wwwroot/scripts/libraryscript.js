@@ -92,15 +92,16 @@
             });
 
             if (!response.ok) {
-                throw new Error('Failed to rent book');
+                const errorResponse = await response.json();
+                alert('failed to rent book, ' + errorResponse.error);
+                throw new Error(errorResponse.error);
             }
 
             alert('Book rented successfully!');
             fetchBooks();
             fetchUserBooks();
         } catch (error) {
-            console.error('Error renting book:', error);
-            alert('Failed to rent book. Please try again.');
+            console.error('failed to rent book',error);
         }
     }
 

@@ -23,7 +23,7 @@ namespace LibraryApiService.Controllers
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return StatusCode(500, new { error = ex.Message });
             }
         }
         [HttpDelete("removeBook")]
