@@ -46,8 +46,7 @@
               "RelativeToolTip": "LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
               "ViewState": "AQIAAE4AAADAOjMzM/MiwGAAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-26T07:19:31.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T07:19:31.826Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "LibraryApiService\\Controllers\\CheckoutController.cs",
               "ViewState": "AQIAAAwAAAAAmpmZmZkGwBkAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T14:19:14.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T14:19:14.649Z"
             }
           ]
         }
