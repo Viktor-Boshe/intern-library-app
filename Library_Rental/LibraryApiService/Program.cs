@@ -1,4 +1,5 @@
-using LibraryApiService;
+using LibraryApiService.Interface;
+using LibraryApiService.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

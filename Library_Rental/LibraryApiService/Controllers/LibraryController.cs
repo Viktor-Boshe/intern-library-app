@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using LibraryApiService.Interface;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryApiService.Controllers
 {
@@ -17,6 +18,12 @@ namespace LibraryApiService.Controllers
         public ActionResult<IEnumerable<Library>> GetBooks()
         {
             var books = _libraryRepository.GetBooks();
+            return Ok(books);
+        }
+        [HttpPost("GetBooksByIds")]
+        public ActionResult<IEnumerable<Library>> GetBooksByIds([FromBody] List<int> bookIds)
+        {
+            var books = _libraryRepository.GetBooksByIds(bookIds);
             return Ok(books);
         }
     }

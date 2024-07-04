@@ -1,4 +1,4 @@
-﻿namespace LibraryApiService
+﻿namespace LibraryApiService.Interface
 {
     public interface IUserRepository
     {

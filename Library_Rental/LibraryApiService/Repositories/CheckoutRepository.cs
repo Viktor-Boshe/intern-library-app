@@ -1,8 +1,9 @@
 ﻿using Dapper;
+using LibraryApiService.Interface;
 using MySql.Data.MySqlClient;
 using System.Diagnostics.Eventing.Reader;
 
-namespace LibraryApiService
+namespace LibraryApiService.Repositories
 {
     public class CheckoutRepository : ICheckoutRepository
     {
@@ -24,7 +25,7 @@ namespace LibraryApiService
                     conn.Close();
                 }
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 if (ex.Message.Contains("duplicate"))
                 {
@@ -51,7 +52,7 @@ namespace LibraryApiService
                     conn.Close();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -67,16 +68,16 @@ namespace LibraryApiService
                 {
                     conn.Open();
                     string query = "SELECT checkout_book_id FROM checkout WHERE checkout_user_id = @user_id";
-                    bookIds = conn.Query<int>(query,new { user_id }).ToList();
+                    bookIds = conn.Query<int>(query, new { user_id }).ToList();
                 }
-                using (var conn =new MySqlConnection(connstring))
+                using (var conn = new MySqlConnection(connstring))
                 {
                     conn.Open();
                     foreach (int book_id in bookIds)
                     {
                         string query = "SELECT * FROM Library where book_id = @book_id";
                         var book = conn.QueryFirstOrDefault<Library>(query, new { book_id });
-                        if(book != null)
+                        if (book != null)
                         {
                             books.Add(book);
                         }

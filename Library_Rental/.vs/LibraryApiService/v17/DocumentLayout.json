@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\checkoutrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\checkoutrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\wwwroot\\styling\\librarystyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\wwwroot\\styling\\librarystyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\wwwroot\\library.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\wwwroot\\library.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\wwwroot\\scripts\\libraryscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\wwwroot\\scripts\\libraryscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\repositories\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\repositories\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\versioning\\intern-library-app\\library_rental\\libraryapiservice\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,40 +50,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "libraryscript.js",
-              "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
-              "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
-              "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
-              "RelativeToolTip": "LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
-              "ViewState": "AQIAAE4AAADAOjMzM/MiwGAAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-26T07:19:31.826Z"
+              "DocumentIndex": 5,
+              "Title": "Checkout.cs",
+              "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\Checkout.cs",
+              "RelativeDocumentMoniker": "LibraryApiService\\Checkout.cs",
+              "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\Checkout.cs",
+              "RelativeToolTip": "LibraryApiService\\Checkout.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T08:02:11.027Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CheckoutRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\CheckoutRepository.cs",
-              "RelativeDocumentMoniker": "LibraryApiService\\CheckoutRepository.cs",
-              "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\CheckoutRepository.cs",
-              "RelativeToolTip": "LibraryApiService\\CheckoutRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
+              "DocumentIndex": 4,
+              "Title": "LibraryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\Repositories\\LibraryRepository.cs",
+              "RelativeDocumentMoniker": "LibraryApiService\\Repositories\\LibraryRepository.cs",
+              "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\Repositories\\LibraryRepository.cs",
+              "RelativeToolTip": "LibraryApiService\\Repositories\\LibraryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAUwA0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T08:08:40.838Z",
+              "WhenOpened": "2024-07-04T08:02:01.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CheckoutController.cs",
-              "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\Controllers\\CheckoutController.cs",
-              "RelativeDocumentMoniker": "LibraryApiService\\Controllers\\CheckoutController.cs",
-              "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\Controllers\\CheckoutController.cs",
-              "RelativeToolTip": "LibraryApiService\\Controllers\\CheckoutController.cs",
-              "ViewState": "AQIAAAwAAAAAmpmZmZkGwBkAAAAQAAAA",
+              "Title": "Library.cs",
+              "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\Library.cs",
+              "RelativeDocumentMoniker": "LibraryApiService\\Library.cs",
+              "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\Library.cs",
+              "RelativeToolTip": "LibraryApiService\\Library.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T14:19:14.649Z"
+              "WhenOpened": "2024-07-04T07:48:49.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "libraryscript.js",
+              "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
+              "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
+              "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
+              "RelativeToolTip": "LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
+              "ViewState": "AQIAAH8AAADAMjMzM/MiwI0AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-04T07:32:54.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "librarystyle.css",
+              "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\librarystyle.css",
+              "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\styling\\librarystyle.css",
+              "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\librarystyle.css",
+              "RelativeToolTip": "LibraryApiService\\wwwroot\\styling\\librarystyle.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-04T07:30:56.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Library.html",
+              "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\Library.html",
+              "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\Library.html",
+              "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\Library.html",
+              "RelativeToolTip": "LibraryApiService\\wwwroot\\Library.html",
+              "ViewState": "AQIAAAwAAACAAwAAAAACwCEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-04T07:29:29.271Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using Dapper;
-namespace LibraryApiService
+using LibraryApiService.Interface;
+namespace LibraryApiService.Repositories
 {
     public class UserRepository : IUserRepository
     {
