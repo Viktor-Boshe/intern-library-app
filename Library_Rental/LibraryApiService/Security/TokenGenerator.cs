@@ -8,7 +8,7 @@ namespace LibraryApiService.Security
     public class TokenGenerator
     {
         private readonly string _secret;
-        private const int _remainingMinutes = 10;
+        private const int _remainingMinutes = 1;
 
         public TokenGenerator(string secret)
         {
