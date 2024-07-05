@@ -12,7 +12,16 @@
     justify-content: center;
     margin: 20px auto;
 }
-
+.search_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchItems {
+    display: inline-flex;
+    border-radius: 5px;
+    margin-right: 10px;
+}
 .button_container {
     margin-top: 10px;
 }
@@ -29,21 +38,35 @@ input[type="submit"] {
     cursor: pointer;
     margin: 5px;
 }
-
     input[type="submit"]:hover {
         background-color: #45a049;
     }
-
-.list_of_books {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-top: 10px;
-    overflow-y: auto;
-    max-height: 360px;
-    width: 100%;
+.preview_container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
+    .preview_container #DescriptionPreview{
+        background-color: white;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        max-height: 360px;
+        width: 520px;
+        overflow: auto;
+        margin-right: 10px;
+    }
+
+
+    .list_of_books {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin-top: 10px;
+        overflow-y: auto;
+        max-height: 360px;
+        width: 100%;
+    }
 
     .list_of_books ul {
         list-style-type: none;

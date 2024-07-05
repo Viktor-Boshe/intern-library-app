@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using LibraryApiService.Interface;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Org.BouncyCastle.Asn1;
+using System.IdentityModel.Tokens.Jwt;
 using ZstdSharp.Unsafe;
 
 namespace LibraryApiService.Controllers
@@ -14,10 +18,26 @@ namespace LibraryApiService.Controllers
             _checkoutRepository = checkoutRepository;
         }
         [HttpPost]
-        public ActionResult Checkout(Checkout checkout)
+        [Authorize]
+        public ActionResult Checkout(string user, int book_id)
         {
             try
             {
+                var jwtHandler = new JwtSecurityTokenHandler();
+                var jwtToken = jwtHandler.ReadToken(user) as JwtSecurityToken;
+
+                if (jwtToken == null)
+                {
+                    throw new ArgumentException("Invalid JWT token");
+                }
+
+                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "user_id");
+                var checkout = new Checkout
+                {
+                    checkout_user_id = int.Parse(userIdClaim.Value),
+                    checkout_book_id = book_id
+                };
+
                 _checkoutRepository.AddCheckout(checkout);
                 return Ok(new { success = true });
             }
@@ -27,13 +47,23 @@ namespace LibraryApiService.Controllers
             }
         }
         [HttpDelete("removeBook")]
-        public ActionResult Delete(int user_id,int book_id)
+        [Authorize]
+        public ActionResult Delete(string user,int book_id)
         {
             try
             {
+                var jwtHandler = new JwtSecurityTokenHandler();
+                var jwtToken = jwtHandler.ReadToken(user) as JwtSecurityToken;
+
+                if (jwtToken == null)
+                {
+                    throw new ArgumentException("Invalid JWT token");
+                }
+
+                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "user_id");
                 var checkout = new Checkout
                 {
-                    checkout_user_id = user_id,
+                    checkout_user_id = int.Parse(userIdClaim.Value),
                     checkout_book_id = book_id
                 };
                 _checkoutRepository.DeleteCheckout(checkout);
@@ -45,11 +75,22 @@ namespace LibraryApiService.Controllers
             }
         }
         [HttpGet("getbooks")]
-        public ActionResult Get(int id)
+        [Authorize]
+        public ActionResult Get(string user)
         {
             try
             {
-                var books = _checkoutRepository.getBooks(id);
+                var jwtHandler = new JwtSecurityTokenHandler();
+                var jwtToken = jwtHandler.ReadToken(user) as JwtSecurityToken;
+
+                if (jwtToken == null)
+                {
+                    throw new ArgumentException("Invalid JWT token");
+                }
+
+                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "user_id");
+
+                var books = _checkoutRepository.getBooks(int.Parse(userIdClaim.Value));
                 return Ok(books);
             }
             catch (Exception ex)

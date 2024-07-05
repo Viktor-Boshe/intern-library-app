@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2PCa3fq2AQhaDS9VwUVbi1qkbbhJX9IQtjZ/eaicKhc=",
+  "Hash": "C3Fp5hrLZdHsCmGStAsO9lcwh3SjKx2wMS3FCrVEaSg=",
   "Source": "LibraryApiService",
   "BasePath": "_content/LibraryApiService",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "LibraryApiService\\wwwroot",
       "Source": "LibraryApiService",
-      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\CreateUserPage.html",
+      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\CreateUserPage.html",
       "SourceId": "LibraryApiService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "RelativePath": "CreateUserPage.html",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\CreateUserPage.html"
     },
     {
-      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\FrontPage.html",
+      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\FrontPage.html",
       "SourceId": "LibraryApiService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "RelativePath": "FrontPage.html",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\FrontPage.html"
     },
     {
-      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\Library.html",
+      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\Library.html",
       "SourceId": "LibraryApiService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "RelativePath": "Library.html",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\Library.html"
     },
     {
-      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\createuserscript.js",
+      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\createuserscript.js",
       "SourceId": "LibraryApiService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "RelativePath": "scripts/createuserscript.js",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\scripts\\createuserscript.js"
     },
     {
-      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
+      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
       "SourceId": "LibraryApiService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "RelativePath": "scripts/libraryscript.js",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\scripts\\libraryscript.js"
     },
     {
-      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\loginpagescript.js",
+      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\loginpagescript.js",
       "SourceId": "LibraryApiService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "RelativePath": "scripts/loginpagescript.js",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\scripts\\loginpagescript.js"
     },
     {
-      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\createuserstyling.css",
+      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\createuserstyling.css",
       "SourceId": "LibraryApiService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "RelativePath": "styling/createuserstyling.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\styling\\createuserstyling.css"
     },
     {
-      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\librarystyle.css",
+      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\librarystyle.css",
       "SourceId": "LibraryApiService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "RelativePath": "styling/librarystyle.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\styling\\librarystyle.css"
     },
     {
-      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\loginpagestyle.css",
+      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\loginpagestyle.css",
       "SourceId": "LibraryApiService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\versioning\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\test\\intern-library-app-0.0.5\\Library_Rental\\LibraryApiService\\wwwroot\\",
       "BasePath": "_content/LibraryApiService",
       "RelativePath": "styling/loginpagestyle.css",
       "AssetKind": "All",
