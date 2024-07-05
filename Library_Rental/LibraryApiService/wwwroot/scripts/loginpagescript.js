@@ -13,11 +13,12 @@
     })
         .then(response => response.json())
         .then(data => {
-            const user_id = data.user.user_id;
+            token = data.token;
             if (data.success) {
-                window.location.href = `Library.html?userId=${user_id}`;
+                window.location.href = `Library.html?user=${token}`;
             } else {
                 document.getElementById('errorMessage').style.display = 'block';
+                alert("ERROR")
             }
         })
         .catch(error => {

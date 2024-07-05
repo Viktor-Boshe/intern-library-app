@@ -5,6 +5,12 @@
     <link rel="stylesheet" href="styling/librarystyle.css" />
 </head>
 <body>
+    <div class="search_container">
+        <input class="searchItems" type="text" id="book_name_input" placeholder="Book Name" />
+        <input class="searchItems" type="text" id="book_author_input" placeholder="Book Author" />
+        <input class="searchItems" type="text" id="book_description_input" placeholder="Book Description" />
+        <button class="searchItems" id="searchButton">Search</button>
+    </div>
     <div class="container">
         <div class="list_of_books">
             <h3>
@@ -12,6 +18,7 @@
             </h3>
             <ul id="bookList"></ul>
         </div>
+        <div id="pagination" class="pagination-container"></div>
         <div class="list_of_books">
             <h3>
                 Your Rented Books:
@@ -21,6 +28,10 @@
         <div class="button_container">
             <input type="submit" value="Rent Book" id="rentButton" />
             <input type="submit" value="Return Book" id="returnButton" />
+        </div>
+        <div class="preview_container">
+            <p id="DescriptionPreview"></p>
+            <img id="ItemPreview" src="" />
         </div>
     </div>
     <script src="scripts/libraryscript.js"></script>

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+﻿using LibraryApiService.Interface;
+using LibraryApiService.Security;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryApiService.Controllers
@@ -8,10 +9,13 @@ namespace LibraryApiService.Controllers
     public class UsersController : ControllerBase
     {
         private readonly IUserRepository _userRepository;
+        private readonly TokenGenerator _tokenGenerator;
 
-        public UsersController(IUserRepository userRepository)
+        public UsersController(IUserRepository userRepository, TokenGenerator tokenGenerator)
         {
             _userRepository = userRepository;
+            _tokenGenerator = tokenGenerator;
+
         }
         [HttpPost("create")]
         public ActionResult AddUser(Users user)
@@ -33,7 +37,8 @@ namespace LibraryApiService.Controllers
 
             if (user != null && PasswordHasher.checkPassword(loginDetails.password, user.password))
             {
-                return Ok(new { success = true, user });
+                var token = _tokenGenerator.GenerateToken(user);
+                return Ok(new { success = true, token });
             }
             else
             {
