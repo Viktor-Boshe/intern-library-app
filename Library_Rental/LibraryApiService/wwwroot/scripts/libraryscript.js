@@ -6,12 +6,15 @@
     const bookAuthorInput = document.getElementById('book_author_input');
     const bookDescriptionInput = document.getElementById('book_description_input');
     const searchButton = document.getElementById('searchButton');
+    const refreshingInterval = 15;
 
     searchButton.addEventListener('click', searchBooks);
-
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    token = urlParams.get('user');
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+    token = getCookie('jwtToken');
 
     rentButton.addEventListener('click', rentBook);
     returnButton.addEventListener('click', returnBook);
@@ -21,7 +24,9 @@
 
     async function fetchUserBooks() {
         try {
-            const url = `api/checkout/getbooks?user=${token}`;
+            await refreshTokenIfNeeded();
+
+            const url = `api/checkout/getbooks`;
             const response = await fetch(url, {
                 method: 'GET',
                 headers: {
@@ -30,10 +35,6 @@
                 },
             });
             if (!response.ok) {
-                if (response.status == 401) {
-                    alert("Your session has expired please try log-in again");
-                    window.location.href = 'FrontPage.html';
-                }
                 throw new Error('Failed to fetch user books');
             }
             const books = await response.json();
@@ -50,16 +51,14 @@
 
     async function fetchBooks() {
         try {
+            await refreshTokenIfNeeded();
+
             const response = await fetch('api/Library', {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
             });
             if (!response.ok) {
-                if (response.status == 401) {
-                    alert("Your session has expired please try log-in again");
-                    window.location.href = 'FrontPage.html';
-                }
                 throw new Error('Failed to fetch books');
             }
             const books = await response.json();
@@ -97,12 +96,14 @@
         return li;
     }
     async function rentBook() {
+        await refreshTokenIfNeeded();
+
         const bookContainer = document.getElementById("bookList");
         const book_id = bookContainer.getAttribute('book_id');
         if (!book_id) return;
 
         try {
-            const response = await fetch(`api/Checkout?user=${token}&book_id=${book_id}`, {
+            const response = await fetch(`api/Checkout?user=book_id=${book_id}`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -111,10 +112,6 @@
             });
 
             if (!response.ok) {
-                if (response.status == 401) {
-                    alert("Your session has expired please try log-in again");
-                    window.location.href = 'FrontPage.html';
-                }
                 const errorResponse = await response.json();
                 alert('failed to rent book, ' + errorResponse.error);
                 throw new Error(errorResponse.error);
@@ -129,12 +126,14 @@
     }
 
     async function returnBook() {
+        await refreshTokenIfNeeded();
+
         const bookContainer = document.getElementById("userBookList");
         const book_id = bookContainer.getAttribute('book_id');
         if (!book_id) return;
 
         try {
-            const response = await fetch(`api/checkout/removeBook?user=${token}&book_id=${book_id}`, {
+            const response = await fetch(`api/checkout/removeBook?book_id=${book_id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -142,10 +141,6 @@
                 },
             });
             if (!response.ok) {
-                if (response.status == 401) {
-                    alert("Your session has expired please try log-in again");
-                    window.location.href = 'FrontPage.html';
-                }
                 throw new Error('Failed to return book');
             }
             alert('Book returned successfully!');
@@ -171,9 +166,12 @@
     }
     async function searchBooks() {
         try {
+            await refreshTokenIfNeeded();
+
             const response = await fetch('http://10.2.12.74:5000/api/search', {
                 method: 'POST',
                 headers: {
+                    'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
@@ -184,10 +182,6 @@
             });
 
             if (!response.ok) {
-                if (response.status == 401) {
-                    alert("Your session has expired please try log-in again");
-                    window.location.href = 'FrontPage.html';
-                }
                 throw new Error('Failed to fetch books');
             }
 
@@ -206,6 +200,8 @@
 
     async function fetchBooksByIds(bookIds) {
         try {
+            await refreshTokenIfNeeded();
+
             const response = await fetch('api/Library/GetBooksByIds', {
                 method: 'POST',
                 headers: {
@@ -216,12 +212,7 @@
             });
 
             if (!response.ok) {
-                if (response.status == 401) {
-                    alert("Your session has expired please try log-in again");
-                    window.location.href = 'FrontPage.html';
-                } else {
-                    throw new Error('Failed to fetch books by IDs');
-                }
+                throw new Error('Failed to fetch books by IDs');
             }
 
             const books = await response.json();
@@ -230,6 +221,43 @@
             console.error('Error fetching books by IDs:', error);
             throw error;
         }
+    }
+    async function refreshTokenIfNeeded() {
+        const currentTime = Math.floor(Date.now() / 1000);
+        const tokenExpiration = parseJwt(token).exp;
+        const timeRemaining = tokenExpiration - currentTime;
+        console.log(timeRemaining);
+
+        if (timeRemaining < refreshingInterval) {
+            try {
+                const response = await fetch('api/users/refresh', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+                if (response.ok) {
+                    const data = await response.json();
+                    token = data.token;
+                    document.cookie = `jwtToken=${data.token}; path=/; secure; SameSite=Strict;`;
+                } else {
+                    alert("Session expired. Please log in again.");
+                    window.location.href = 'FrontPage.html';
+                }
+            } catch (error) {
+                console.error('Error refreshing token:', error);
+            }
+        }
+    }
+
+    function parseJwt(token) {
+        var base64Url = token.split('.')[1];
+        var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        var jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+
+        return JSON.parse(jsonPayload);
     }
 
 });

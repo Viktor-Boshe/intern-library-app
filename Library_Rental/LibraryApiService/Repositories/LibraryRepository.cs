@@ -18,11 +18,24 @@ namespace LibraryApiService.Repositories
         {
             try
             {
+                List<int> ids = new List<int>();
+                List<Library> books = new List<Library>();
+                Random random = new Random();
+                int count = 50;
+                while(count > 0)
+                {
+                    ids.Add(random.Next(19332, 66121));
+                    count--;
+                }
                 using (MySqlConnection conn = new MySqlConnection(connstring))
                 {
                     conn.Open();
-                    string query = "SELECT * FROM library ORDER BY rand ( ) LIMIT 50";
-                    return conn.Query<Library>(query).ToList();
+                    foreach (int id in ids)
+                    {
+                        string query = "SELECT * FROM library WHERE book_id = @book_id";
+                        books.Add(item: conn.Query<Library>(query, new { book_id = id }).SingleOrDefault());
+                    }
+                    return books;
                 }
             }
             catch (Exception ex)

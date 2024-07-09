@@ -1,5 +1,6 @@
 ﻿using LibraryApiService.Interface;
 using LibraryApiService.Security;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryApiService.Controllers
@@ -33,7 +34,7 @@ namespace LibraryApiService.Controllers
         [HttpPost("login")]
         public ActionResult Login([FromBody] Users loginDetails)
         {
-            var user = _userRepository.GetUsers().FirstOrDefault(u => u.username == loginDetails.username);
+            var user = _userRepository.GetUser(loginDetails.username).FirstOrDefault(u => u.username == loginDetails.username);
 
             if (user != null && PasswordHasher.checkPassword(loginDetails.password, user.password))
             {
@@ -45,7 +46,34 @@ namespace LibraryApiService.Controllers
                 return Unauthorized(new { success = false, message = "Invalid username or password." });
             }
         }
-        [HttpGet]
+        [HttpPost("refresh")]
+        [Authorize]
+        public ActionResult RefreshToken()
+        {
+            var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+
+            var validation = _tokenGenerator.ValidateToken(token);
+            if (validation == null)
+            {
+                return Unauthorized(new { success = false, message = "Invalid token" });
+            }
+
+            var newToken = _tokenGenerator.RefreshToken(validation);
+            return Ok(new { success = true, token = newToken });
+        }
+        [HttpGet("validate")]
+        [Authorize]
+        public ActionResult TokenValidation()
+        {
+            var authHeader = HttpContext.Request.Headers["Authorization"];
+            if (string.IsNullOrEmpty(authHeader))
+            {
+                return Unauthorized(new { message = "No authorization header found." });
+            }
+            var token = authHeader.ToString().Replace("Bearer ", "");
+            return Ok(new { success = true, token });
+        }
+
         public ActionResult<IEnumerable<Users>> GetUsers()
         {
             var users = _userRepository.GetUsers();
