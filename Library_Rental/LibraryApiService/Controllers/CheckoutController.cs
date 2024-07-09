@@ -19,19 +19,17 @@ namespace LibraryApiService.Controllers
         }
         [HttpPost]
         [Authorize]
-        public ActionResult Checkout(string user, int book_id)
+        public ActionResult Checkout(int book_id)
         {
             try
             {
-                var jwtHandler = new JwtSecurityTokenHandler();
-                var jwtToken = jwtHandler.ReadToken(user) as JwtSecurityToken;
+                var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == "user_id");
 
-                if (jwtToken == null)
+                if (userIdClaim == null)
                 {
-                    throw new ArgumentException("Invalid JWT token");
+                    throw new ArgumentException("Missing user_id claim");
                 }
 
-                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "user_id");
                 var checkout = new Checkout
                 {
                     checkout_user_id = int.Parse(userIdClaim.Value),
@@ -48,19 +46,17 @@ namespace LibraryApiService.Controllers
         }
         [HttpDelete("removeBook")]
         [Authorize]
-        public ActionResult Delete(string user,int book_id)
+        public ActionResult Delete(int book_id)
         {
             try
             {
-                var jwtHandler = new JwtSecurityTokenHandler();
-                var jwtToken = jwtHandler.ReadToken(user) as JwtSecurityToken;
+                var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == "user_id");
 
-                if (jwtToken == null)
+
+                if (userIdClaim == null)
                 {
                     throw new ArgumentException("Invalid JWT token");
                 }
-
-                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "user_id");
                 var checkout = new Checkout
                 {
                     checkout_user_id = int.Parse(userIdClaim.Value),
@@ -76,26 +72,23 @@ namespace LibraryApiService.Controllers
         }
         [HttpGet("getbooks")]
         [Authorize]
-        public ActionResult Get(string user)
+        public ActionResult Get()
         {
             try
             {
-                var jwtHandler = new JwtSecurityTokenHandler();
-                var jwtToken = jwtHandler.ReadToken(user) as JwtSecurityToken;
+                var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == "user_id");
 
-                if (jwtToken == null)
+                if (userIdClaim == null)
                 {
-                    throw new ArgumentException("Invalid JWT token");
+                    throw new ArgumentException("Missing user_id claim");
                 }
-
-                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "user_id");
 
                 var books = _checkoutRepository.getBooks(int.Parse(userIdClaim.Value));
                 return Ok(books);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
     }

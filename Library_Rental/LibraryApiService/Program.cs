@@ -34,7 +34,29 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ClockSkew = TimeSpan.Zero,
             LifetimeValidator = (DateTime? notBefore, DateTime? expires, SecurityToken token, TokenValidationParameters validationParameters) =>
             {
-                return expires != null && expires > DateTime.UtcNow;
+                if (expires != null)
+                {
+                    return expires > DateTime.UtcNow;
+                }
+                return false;
+            }
+        };
+
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
+            {
+                var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+                if (!string.IsNullOrEmpty(token))
+                {
+                    var tokenGenerator = context.HttpContext.RequestServices.GetRequiredService<TokenGenerator>();
+                    var principal = tokenGenerator.ValidateToken(token);
+                    if (principal != null)
+                    {
+                        context.HttpContext.User = principal;
+                    }
+                }
+                return Task.CompletedTask;
             }
         };
     });

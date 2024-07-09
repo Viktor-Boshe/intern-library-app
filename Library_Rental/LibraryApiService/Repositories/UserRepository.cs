@@ -46,5 +46,21 @@ namespace LibraryApiService.Repositories
                 throw new Exception(ex.Message);
             }
         }
+        public IEnumerable<Users> GetUser(string username)
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(connstring))
+                {
+                    conn.Open();
+                    string query = "SELECT * FROM users WHERE username = @username";
+                    return conn.Query<Users>(query, new { username });
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }
