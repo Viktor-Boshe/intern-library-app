@@ -168,7 +168,7 @@
         try {
             await refreshTokenIfNeeded();
 
-            const response = await fetch('http://10.2.12.74:5000/api/search', {
+            const response = await fetch('https://knigoprebaruvac.com/api/search', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,
