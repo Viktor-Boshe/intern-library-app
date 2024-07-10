@@ -6,7 +6,7 @@
     const bookAuthorInput = document.getElementById('book_author_input');
     const bookDescriptionInput = document.getElementById('book_description_input');
     const searchButton = document.getElementById('searchButton');
-    const refreshingInterval = 15;
+    const refreshingInterval = 900;
 
     searchButton.addEventListener('click', searchBooks);
     function getCookie(name) {
@@ -103,7 +103,7 @@
         if (!book_id) return;
 
         try {
-            const response = await fetch(`api/Checkout?user=book_id=${book_id}`, {
+            const response = await fetch(`api/Checkout?book_id=${book_id}`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -168,7 +168,7 @@
         try {
             await refreshTokenIfNeeded();
 
-            const response = await fetch('https://knigoprebaruvac.com/api/search', {
+            const response = await fetch('https://10.2.12.74:444/api/search', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,

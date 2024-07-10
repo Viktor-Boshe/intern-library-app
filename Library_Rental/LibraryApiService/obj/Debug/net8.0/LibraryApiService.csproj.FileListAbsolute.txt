@@ -403,3 +403,11 @@ C:\Users\vbosh\OneDrive\Desktop\folder\intern-library-app-0.1.0\Library_Rental\L
 C:\Users\vbosh\OneDrive\Desktop\folder\intern-library-app-0.1.0\Library_Rental\LibraryApiService\obj\Debug\net8.0\LibraryApiService.pdb
 C:\Users\vbosh\OneDrive\Desktop\folder\intern-library-app-0.1.0\Library_Rental\LibraryApiService\obj\Debug\net8.0\LibraryApiService.genruntimeconfig.cache
 C:\Users\vbosh\OneDrive\Desktop\folder\intern-library-app-0.1.0\Library_Rental\LibraryApiService\obj\Debug\net8.0\ref\LibraryApiService.dll
+C:\Users\vbosh\OneDrive\Desktop\versioning\intern-library-app\Library_Rental\LibraryApiService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\vbosh\OneDrive\Desktop\versioning\intern-library-app\Library_Rental\LibraryApiService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\vbosh\OneDrive\Desktop\versioning\intern-library-app\Library_Rental\LibraryApiService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\vbosh\OneDrive\Desktop\versioning\intern-library-app\Library_Rental\LibraryApiService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\vbosh\OneDrive\Desktop\versioning\intern-library-app\Library_Rental\LibraryApiService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\vbosh\OneDrive\Desktop\versioning\intern-library-app\Library_Rental\LibraryApiService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\vbosh\OneDrive\Desktop\versioning\intern-library-app\Library_Rental\LibraryApiService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\vbosh\OneDrive\Desktop\versioning\intern-library-app\Library_Rental\LibraryApiService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

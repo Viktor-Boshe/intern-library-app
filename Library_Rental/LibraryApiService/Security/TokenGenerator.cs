@@ -28,7 +28,7 @@ namespace LibraryApiService.Security
 
             var token = new JwtSecurityToken(
                 claims: claims,
-                expires: DateTime.UtcNow.AddSeconds(_remainingMinutes),
+                expires: DateTime.UtcNow.AddMinutes(_remainingMinutes),
                 signingCredentials: creds
             );
 
@@ -77,7 +77,7 @@ namespace LibraryApiService.Security
 
             var token = new JwtSecurityToken(
                 claims: claims,
-                expires: DateTime.UtcNow.AddSeconds(_remainingMinutes),
+                expires: DateTime.UtcNow.AddMinutes(_remainingMinutes),
                 signingCredentials: creds
             );
 
