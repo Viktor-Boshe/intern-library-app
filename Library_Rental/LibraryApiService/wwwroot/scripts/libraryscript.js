@@ -120,6 +120,20 @@
             alert('Book rented successfully!');
             fetchBooks();
             fetchUserBooks();
+
+            const emailResponse = await fetch(`api/Email/send?book_id=${book_id}`, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                },
+            });
+
+            if (!emailResponse.ok) {
+                const emailErrorResponse = await emailResponse.json();
+                console.error('Failed to send email', emailErrorResponse.error);
+            }
+
         } catch (error) {
             console.error('failed to rent book',error);
         }

@@ -14,6 +14,14 @@ builder.Services.AddScoped<IUserRepository>(provided => new UserRepository(conns
 builder.Services.AddScoped<ILibraryRepository>(provided => new LibraryRepository(connstring));
 builder.Services.AddScoped<ICheckoutRepository>(provided => new CheckoutRepository(connstring));
 
+builder.Services.AddScoped<IEmailSender>(provider =>
+{
+    var configuration = provider.GetRequiredService<IConfiguration>();
+    var email = configuration["EmailSettings:Email"];
+    var password = configuration["EmailSettings:Password"];
+    return new EmailSenderRepository(email, password, connstring);
+});
+
 builder.Services.AddSingleton<TokenGenerator>(provider =>
 {
     var configuration = provider.GetRequiredService<IConfiguration>();
