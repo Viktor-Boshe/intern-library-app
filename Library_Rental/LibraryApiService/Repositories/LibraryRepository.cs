@@ -14,28 +14,41 @@ namespace LibraryApiService.Repositories
             this.connstring = connstring;
         }
 
-        public IEnumerable<Library> GetBooks()
+        public IEnumerable<Library> GetBooks(bool show)
         {
             try
             {
-                List<int> ids = new List<int>();
-                List<Library> books = new List<Library>();
-                Random random = new Random();
-                int count = 50;
-                while(count > 0)
+                if (show)
                 {
-                    ids.Add(random.Next(19332, 66121));
-                    count--;
-                }
-                using (MySqlConnection conn = new MySqlConnection(connstring))
-                {
-                    conn.Open();
-                    foreach (int id in ids)
+                    List<int> ids = new List<int>();
+                    List<Library> books = new List<Library>();
+                    Random random = new Random();
+                    int count = 50;
+                    while (count > 0)
                     {
-                        string query = "SELECT * FROM library WHERE book_id = @book_id";
-                        books.Add(item: conn.Query<Library>(query, new { book_id = id }).SingleOrDefault());
+                        ids.Add(random.Next(19332, 66121));
+                        count--;
                     }
-                    return books;
+                    using (MySqlConnection conn = new MySqlConnection(connstring))
+                    {
+                        conn.Open();
+                        foreach (int id in ids)
+                        {
+                            string query = "SELECT * FROM library WHERE book_id = @book_id";
+                            books.Add(item: conn.Query<Library>(query, new { book_id = id }).SingleOrDefault());
+                        }
+                        return books;
+                    }
+                }
+                else
+                {
+                    using (MySqlConnection conn = new MySqlConnection(connstring))
+                    {
+                        conn.Open();
+                        string query = "SELECT * FROM library WHERE URL IS NOT NULL";
+                        var books = conn.Query<Library>(query, new { });
+                        return books;
+                    }
                 }
             }
             catch (Exception ex)

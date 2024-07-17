@@ -3,6 +3,7 @@
 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
+    const email = document.getElementById('e-mail').value;
     if (event.submitter.id == 'logIn') {
         logInPage();
     }
@@ -13,16 +14,24 @@
             document.getElementById('password').value = '';
             return;
         }
-        createUser(username, password);
+        if (email != '') {
+            if (typeof (RegExp) == 'function') {
+                regX = new RegExp('^([a-zA-Z0-9\\-\\.\\_]+)(\\@)([a-zA-Z0-9\\-\\.]+)(\\.)([a-zA-Z]{2,4})$');
+                if (!regX.test(email)) {
+                    alert('Please provide a valid e-mail address.');
+                    return false;
+                };
+            }
+            createUser(email, username, password);
     }
 
-    function createUser(username, password) {
+    function createUser(email,username, password) {
         fetch('/api/users/create', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ username: username, password: password })
+            body: JSON.stringify({ email: email, username: username, password: password })
         })
             .then(response => response.json())
             .then(data => {

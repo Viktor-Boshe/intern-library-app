@@ -32,15 +32,23 @@ namespace LibraryApiService.Repositories
                 using (var conn = new MySqlConnection(_connstring))
                 {
                     conn.Open();
-                    string emailQuery = "SELECT user_email FROM users WHERE user_id = @user_id";
-                    recipientEmail = await conn.QuerySingleOrDefaultAsync<string>(emailQuery, new { emailSender.UserId });
+                    string emailQuery = "SELECT e_mail FROM users WHERE user_id = @user_id";
+                    recipientEmail = conn.QuerySingleOrDefault<string>(emailQuery, new { user_id = emailSender.UserId });
+                    if(recipientEmail == null)
+                    {
+                        throw new ArgumentException("YOU HAVE NO MAIL");
+                    }
                     string urlQuery = "SELECT URL FROM library WHERE book_id = @book_id";
-                    emailSender.Body = await conn.QuerySingleOrDefaultAsync<string>(urlQuery, new { emailSender.BookId });
+                    emailSender.Body = conn.QuerySingleOrDefault<string>(urlQuery, new { book_id = emailSender.BookId });
+                    if (emailSender.Body == null)
+                    {
+                        throw new ArgumentException("BOOK IS NOT AVAILABLE FOR DIGITAL PURCHASE YOU CAN ONLY PICK IT UP TURN OFF SHOW ALL BOOKS IF YOU WANT TO SEE WHAT YOU CAN GET");
+                    }
                     conn.Close();
                 }
                 var mailMessage = new MailMessage
                 {
-                    From = new MailAddress(_email, "No Reply"),
+                    From = new MailAddress(_email, "Book Library"),
                     Subject = emailSender.Subject,
                     Body = emailSender.Body,
                     IsBodyHtml = true,
@@ -52,7 +60,7 @@ namespace LibraryApiService.Repositories
             }
             catch (Exception ex)
             {
-                throw new Exception("Failed to send email", ex);
+                throw new Exception(ex.Message);
             }
         }
     }

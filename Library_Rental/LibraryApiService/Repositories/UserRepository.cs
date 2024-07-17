@@ -20,9 +20,9 @@ namespace LibraryApiService.Repositories
                 using (var conn = new MySqlConnection(connstring))
                 {
                     conn.Open();
-                    string query = "INSERT INTO users (username,password) VALUES (@Username,@Password)";
+                    string query = "INSERT INTO users (e-mail,username,password) VALUES (@email,@username,@password)";
                     var hashedpassword = PasswordHasher.HashPassword(user.password);
-                    conn.Execute(query, new { Username = user.username, Password = hashedpassword });
+                    conn.Execute(query, new { user.email, user.username, password = hashedpassword });
                 }
             }
             catch

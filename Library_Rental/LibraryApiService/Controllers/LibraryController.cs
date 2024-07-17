@@ -17,9 +17,9 @@ namespace LibraryApiService.Controllers
 
         [HttpGet]
         [Authorize]
-        public ActionResult<IEnumerable<Library>> GetBooks()
+        public ActionResult<IEnumerable<Library>> GetBooks(bool show)
         {
-            var books = _libraryRepository.GetBooks();
+            var books = _libraryRepository.GetBooks(show);
             return Ok(books);
         }
         [HttpPost("GetBooksByIds")]
