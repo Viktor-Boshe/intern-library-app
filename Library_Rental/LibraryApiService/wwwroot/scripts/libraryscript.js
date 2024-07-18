@@ -6,6 +6,7 @@
     const bookAuthorInput = document.getElementById('book_author_input');
     const bookDescriptionInput = document.getElementById('book_description_input');
     const searchButton = document.getElementById('searchButton');
+    const showAllBooksRadio = document.getElementById('showAllBooks');
     const refreshingInterval = 900;
 
     searchButton.addEventListener('click', searchBooks);
@@ -18,10 +19,15 @@
 
     rentButton.addEventListener('click', rentBook);
     returnButton.addEventListener('click', returnBook);
+    showAllBooksRadio.addEventListener('change', handleShowAllBooksChange);
 
     fetchBooks();
     fetchUserBooks();
 
+    async function handleShowAllBooksChange(event) {
+        const isChecked = event.target.checked;
+        fetchBooks(isChecked);
+    }
     async function fetchUserBooks() {
         try {
             await refreshTokenIfNeeded();
@@ -49,11 +55,10 @@
         }
     }
 
-    async function fetchBooks() {
+    async function fetchBooks(show = false) {
         try {
             await refreshTokenIfNeeded();
-
-            const response = await fetch('api/Library', {
+            const response = await fetch(`api/Library?show=${show}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -103,6 +108,24 @@
         if (!book_id) return;
 
         try {
+            const emailResponse = await fetch(`api/Email/send?book_id=${book_id}`, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                },
+            });
+
+            if (!emailResponse.ok) {
+                const emailErrorResponse = await emailResponse.json();
+                console.log(emailErrorResponse);
+                alert(emailErrorResponse.error);
+                throw new Error("");
+            }
+            else if (emailResponse.ok) {
+                alert("successfully sent your book to your email");
+            }
+
             const response = await fetch(`api/Checkout?book_id=${book_id}`, {
                 method: 'POST',
                 headers: {
@@ -117,11 +140,10 @@
                 throw new Error(errorResponse.error);
             }
 
-            alert('Book rented successfully!');
-            fetchBooks();
             fetchUserBooks();
-        } catch (error) {
-            console.error('failed to rent book',error);
+        }
+        catch (error) {
+            console.error('failed to rent book', error);
         }
     }
 
@@ -144,7 +166,6 @@
                 throw new Error('Failed to return book');
             }
             alert('Book returned successfully!');
-            fetchBooks();
             fetchUserBooks();
         } catch (error) {
             console.error('Error returning book:', error);
