@@ -118,12 +118,8 @@
 
             if (!emailResponse.ok) {
                 const emailErrorResponse = await emailResponse.json();
-                console.log(emailErrorResponse);
                 alert(emailErrorResponse.error);
                 throw new Error("");
-            }
-            else if (emailResponse.ok) {
-                alert("successfully sent your book to your email");
             }
 
             const response = await fetch(`api/Checkout?book_id=${book_id}`, {
@@ -138,6 +134,9 @@
                 const errorResponse = await response.json();
                 alert('failed to rent book, ' + errorResponse.error);
                 throw new Error(errorResponse.error);
+            }
+            else if (response.ok) {
+                alert('book successfully rented');
             }
 
             fetchUserBooks();

@@ -31,6 +31,20 @@ namespace LibraryApiService.Controllers
                 return Unauthorized(new { success = false, message = "Username is already in use" }); ;
             }
         }
+        [HttpPut("reset")]
+        public ActionResult ResetPassword(Users user) 
+        {
+            try
+            {
+                _userRepository.ResetPassword(user);
+                return Ok(new { success = true });
+            }
+            catch
+            {
+                return Unauthorized(new { success = false, message = "Unable to change password" });
+            }
+        }
+
         [HttpPost("login")]
         public ActionResult Login([FromBody] Users loginDetails)
         {
@@ -73,11 +87,11 @@ namespace LibraryApiService.Controllers
             var token = authHeader.ToString().Replace("Bearer ", "");
             return Ok(new { success = true, token });
         }
-
-        public ActionResult<IEnumerable<Users>> GetUsers()
+        [HttpGet("user")]
+        public ActionResult<IEnumerable<Users>> GetUser(string username)
         {
-            var users = _userRepository.GetUsers();
-            return Ok(users);
+            var user = _userRepository.GetUser(username);
+            return Ok(new { success = true, user });
         }
     }
 }

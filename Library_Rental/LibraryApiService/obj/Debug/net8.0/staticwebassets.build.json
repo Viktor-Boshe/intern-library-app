@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "F5H5A7Sc8cSl2e7SUClv++K6GuHFSraZ76cPG3R+Ygc=",
+  "Hash": "hKWBMj4LlnzGkgMnLv26R0wn3XSQgEQNfRovNJdBLiQ=",
   "Source": "LibraryApiService",
   "BasePath": "_content/LibraryApiService",
   "Mode": "Default",
@@ -34,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CreateUserPage.html"
+    },
+    {
+      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\favicon.ico",
+      "SourceId": "LibraryApiService",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "BasePath": "_content/LibraryApiService",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
       "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\FrontPage.html",

@@ -59,7 +59,6 @@ function handleLogin() {
                     window.location.href = `Library.html`;
                 } else {
                     document.getElementById('errorMessage').style.display = 'block';
-                    alert("ERROR");
                 }
             })
             .catch(error => {
@@ -67,6 +66,49 @@ function handleLogin() {
             });
     });
 }
+document.getElementById('resetPasswordForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    let username = window.prompt("please enter your username", "");
+    console.log(username);
+    if (username != null) {
+        fetch(`api/users/user?username=${ username }`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    let password = window.prompt("please enter a new password", "");
+                    if (password) {
+                        fetch('/api/users/reset', {
+                            method: 'PUT',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ username: username, password: password })
+                        })
+                            .then(response => response.json())
+                            .then(data => {
+                                if (data.success) {
+                                    alert("SUCCESS")
+                                    window.location.href = 'FrontPage.html';
+                                } else {
+                                    document.getElementById('errorMessage').style.display = 'block';
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
+                            })
+                    }
+                }
+                else {
+                    document.getElementById('errorMessage').style.display = 'block';
+                }
+            })
+    }
+})
 
 document.getElementById('CreateUserForm').addEventListener('submit', function (event) {
     event.preventDefault();

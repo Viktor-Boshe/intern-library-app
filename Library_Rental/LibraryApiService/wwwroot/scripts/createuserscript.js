@@ -15,14 +15,13 @@
             return;
         }
         if (email != '') {
-            if (typeof (RegExp) == 'function') {
-                regX = new RegExp('^([a-zA-Z0-9\\-\\.\\_]+)(\\@)([a-zA-Z0-9\\-\\.]+)(\\.)([a-zA-Z]{2,4})$');
-                if (!regX.test(email)) {
-                    alert('Please provide a valid e-mail address.');
-                    return false;
-                };
-            }
-            createUser(email, username, password);
+              regX = new RegExp('^([a-zA-Z0-9\\-\\.\\_]+)(\\@)([a-zA-Z0-9\\-\\.]+)(\\.)([a-zA-Z]{2,4})$');
+              if (!regX.test(email)) {
+                  alert('Please provide a valid e-mail address.');
+                  return;
+              };
+        }
+        createUser(email, username, password);
     }
 
     function createUser(email,username, password) {

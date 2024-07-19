@@ -20,9 +20,27 @@ namespace LibraryApiService.Repositories
                 using (var conn = new MySqlConnection(connstring))
                 {
                     conn.Open();
-                    string query = "INSERT INTO users (e-mail,username,password) VALUES (@email,@username,@password)";
+                    string query = "INSERT INTO users (username, password, e_mail) VALUES (@Username, @Password, @e_mail)";
                     var hashedpassword = PasswordHasher.HashPassword(user.password);
-                    conn.Execute(query, new { user.email, user.username, password = hashedpassword });
+                    conn.Execute(query, new { Username = user.username , Password = hashedpassword , e_mail = user.email });
+                    conn.Close();
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+        public void ResetPassword(Users user)
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(connstring))
+                {
+                    conn.Open();
+                    string query = "UPDATE users SET password = @Password WHERE username = @Username";
+                    var hashedpassword = PasswordHasher.HashPassword(user.password);
+                    conn.Execute(query, new { Password = hashedpassword, Username = user.username });
                 }
             }
             catch
