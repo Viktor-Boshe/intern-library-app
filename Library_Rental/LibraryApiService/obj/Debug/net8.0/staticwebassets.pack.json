@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\Contract.png",
+      "PackagePath": "staticwebassets\\Contract.png"
+    },
+    {
       "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\CreateUserPage.html",
       "PackagePath": "staticwebassets\\CreateUserPage.html"
     },

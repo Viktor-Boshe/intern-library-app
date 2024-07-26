@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hKWBMj4LlnzGkgMnLv26R0wn3XSQgEQNfRovNJdBLiQ=",
+  "Hash": "+zJ5uB/kMfbEHRru89mZPYWRcm/+ceEDOq7U0OHf86A=",
   "Source": "LibraryApiService",
   "BasePath": "_content/LibraryApiService",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\Contract.png",
+      "SourceId": "LibraryApiService",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
+      "BasePath": "_content/LibraryApiService",
+      "RelativePath": "Contract.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Contract.png"
+    },
     {
       "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\CreateUserPage.html",
       "SourceId": "LibraryApiService",
