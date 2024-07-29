@@ -9,6 +9,6 @@ namespace LibraryApiService
         public int book_availability { get; set; }
         public string book_author { get; set; }
         public string book_description { get; set; }
-        public byte[] book_coverImg { get; set; }
+        public byte[] book_coverImg { get; s
     }
 }
