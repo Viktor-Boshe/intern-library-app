@@ -1,43 +1,51 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\CreateUserPage.html",
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\Contract.png",
+      "PackagePath": "staticwebassets\\Contract.png"
+    },
+    {
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\CreateUserPage.html",
       "PackagePath": "staticwebassets\\CreateUserPage.html"
     },
     {
-      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\FrontPage.html",
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\FrontPage.html",
       "PackagePath": "staticwebassets\\FrontPage.html"
     },
     {
-      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\Library.html",
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\Library.html",
       "PackagePath": "staticwebassets\\Library.html"
     },
     {
-      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\createuserscript.js",
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\app.js",
+      "PackagePath": "staticwebassets\\scripts\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\createuserscript.js",
       "PackagePath": "staticwebassets\\scripts\\createuserscript.js"
     },
     {
-      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
       "PackagePath": "staticwebassets\\scripts\\libraryscript.js"
     },
     {
-      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\loginpagescript.js",
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\loginpagescript.js",
       "PackagePath": "staticwebassets\\scripts\\loginpagescript.js"
     },
     {
-      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\createuserstyling.css",
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\createuserstyling.css",
       "PackagePath": "staticwebassets\\styling\\createuserstyling.css"
     },
     {
-      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\librarystyle.css",
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\librarystyle.css",
       "PackagePath": "staticwebassets\\styling\\librarystyle.css"
     },
     {
-      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\loginpagestyle.css",
+      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\loginpagestyle.css",
       "PackagePath": "staticwebassets\\styling\\loginpagestyle.css"
     },
     {
