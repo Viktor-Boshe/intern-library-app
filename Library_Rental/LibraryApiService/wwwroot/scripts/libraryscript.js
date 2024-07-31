@@ -118,8 +118,7 @@
 
             if (!emailResponse.ok) {
                 const emailErrorResponse = await emailResponse.json();
-                alert(emailErrorResponse.error);
-                throw new Error("");
+                await alert(emailErrorResponse.error);
             }
 
             const response = await fetch(`api/Checkout?book_id=${book_id}`, {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "R5xF4WExpJdhaD7RxUyC2BN7kKPuk7CqHQxrdn/NOaQ=",
+  "Hash": "NUyKhUF/+p3pfPGLw+lnfZ4+AjOAjOLDtLPCkmvUJuE=",
   "Source": "LibraryApiService",
   "BasePath": "_content/LibraryApiService",
   "Mode": "Default",
@@ -110,25 +110,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Library.html"
-    },
-    {
-      "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\app.js",
-      "SourceId": "LibraryApiService",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\",
-      "BasePath": "_content/LibraryApiService",
-      "RelativePath": "scripts/app.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\scripts\\app.js"
     },
     {
       "Identity": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\createuserscript.js",

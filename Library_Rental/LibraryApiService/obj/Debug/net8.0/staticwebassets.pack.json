@@ -21,10 +21,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\app.js",
-      "PackagePath": "staticwebassets\\scripts\\app.js"
-    },
-    {
       "Id": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder (2)\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\createuserscript.js",
       "PackagePath": "staticwebassets\\scripts\\createuserscript.js"
     },
