@@ -21,7 +21,7 @@
                 var userClaim = context.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier).Value;
                 if (userClaim != null)
                 {
-                    context.Response.Headers.Append("X-User", userClaim);
+                    context.Response.Headers.Append("X-user", userClaim);
                 }
             }
 

@@ -78,10 +78,11 @@ app.UseFileServer(new FileServerOptions
 {
     DefaultFilesOptions = { DefaultFileNames = new[] { "FrontPage.html" } }
 });
-app.UseMiddleware<UserLoggingMiddleware>();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseMiddleware<UserLoggingMiddleware>();
 
 app.MapControllers();
 
