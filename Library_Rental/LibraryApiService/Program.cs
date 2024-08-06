@@ -1,4 +1,5 @@
 using LibraryApiService.Interface;
+using LibraryApiService.Middleware;
 using LibraryApiService.Repositories;
 using LibraryApiService.Security;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -77,6 +78,7 @@ app.UseFileServer(new FileServerOptions
 {
     DefaultFilesOptions = { DefaultFileNames = new[] { "FrontPage.html" } }
 });
+app.UseMiddleware<UserLoggingMiddleware>();
 
 app.UseAuthentication();
 app.UseAuthorization();
