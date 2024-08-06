@@ -2,6 +2,7 @@
 {
     using Microsoft.AspNetCore.Http;
     using System.Linq;
+    using System.Security.Claims;
     using System.Threading.Tasks;
 
     public class UserLoggingMiddleware
@@ -17,10 +18,10 @@
         {
             if (context.User.Identity.IsAuthenticated)
             {
-                var userIdClaim = context.User.Claims.FirstOrDefault(c => c.Type == "user_id");
-                if (userIdClaim != null)
+                var userClaim = context.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier).Value;
+                if (userClaim != null)
                 {
-                    context.Response.Headers.Add("X-User", userIdClaim.Value);
+                    context.Response.Headers.Append("X-User", userClaim);
                 }
             }
 

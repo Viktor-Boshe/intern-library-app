@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\middleware\\logging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\project\\new folder\\intern-library-app\\library_rental\\libraryapiservice\\security\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\security\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|c:\\users\\vbosh\\onedrive\\desktop\\project\\new folder\\intern-library-app\\library_rental\\libraryapiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97FA2D87-23E8-4F5B-8285-EE4F58EA6325}|LibraryApiService\\LibraryApiService.csproj|solutionrelative:libraryapiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -58,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,6 +79,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TokenGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\Security\\TokenGenerator.cs",
+              "RelativeDocumentMoniker": "LibraryApiService\\Security\\TokenGenerator.cs",
+              "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\Security\\TokenGenerator.cs",
+              "RelativeToolTip": "LibraryApiService\\Security\\TokenGenerator.cs",
+              "ViewState": "AQIAADcAAABAAAAAAMAswD8AAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T09:21:10.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\Program.cs",
               "RelativeDocumentMoniker": "LibraryApiService\\Program.cs",
@@ -82,8 +99,7 @@
               "RelativeToolTip": "LibraryApiService\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:49:14.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T08:49:14.745Z"
             },
             {
               "$type": "Document",
@@ -93,14 +109,14 @@
               "RelativeDocumentMoniker": "LibraryApiService\\Middleware\\Logging.cs",
               "ToolTip": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\Middleware\\Logging.cs",
               "RelativeToolTip": "LibraryApiService\\Middleware\\Logging.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAANAAAA",
+              "ViewState": "AQIAABQAAABAZ2ZmZqYjwBgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T08:47:51.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\appsettings.json",
               "RelativeDocumentMoniker": "LibraryApiService\\appsettings.json",
@@ -112,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "librarystyle.css",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\librarystyle.css",
               "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\styling\\librarystyle.css",
@@ -124,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Library.html",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\Library.html",
               "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\Library.html",
@@ -136,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "libraryscript.js",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
               "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
@@ -144,12 +160,11 @@
               "RelativeToolTip": "LibraryApiService\\wwwroot\\scripts\\libraryscript.js",
               "ViewState": "AQIAAP8AAAAAzMzMzEwZwBUBAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-23T09:21:38.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T09:21:38.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "createuserscript.js",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\createuserscript.js",
               "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\scripts\\createuserscript.js",
@@ -161,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "loginpagescript.js",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\scripts\\loginpagescript.js",
               "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\scripts\\loginpagescript.js",
@@ -173,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "CreateUserPage.html",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\CreateUserPage.html",
               "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\CreateUserPage.html",
@@ -185,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "FrontPage.html",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\FrontPage.html",
               "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\FrontPage.html",
@@ -197,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "createuserstyling.css",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\createuserstyling.css",
               "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\styling\\createuserstyling.css",
@@ -209,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "loginpagestyle.css",
               "DocumentMoniker": "C:\\Users\\vbosh\\OneDrive\\Desktop\\project\\New folder\\intern-library-app\\Library_Rental\\LibraryApiService\\wwwroot\\styling\\loginpagestyle.css",
               "RelativeDocumentMoniker": "LibraryApiService\\wwwroot\\styling\\loginpagestyle.css",
